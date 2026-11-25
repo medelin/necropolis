@@ -1,0 +1,12 @@
+# .kiro and everything inside it must NOT be ignored.
+
+node_modules/
+dist/
+coverage/
+.vite/
+*.log
+.DS_Store
+.env
+.env.*
+!.env.example
+.cache/
