@@ -18,6 +18,8 @@ up to date with every commit. Nothing here is hidden or rounded up in Kiro's fav
 | 1 | 2026-11-25 | kiro-cli 3.6.0, V3, `--no-interactive`, model `auto` | assistant | create first-draft `README.md`, `TRADEMARKS.md`, `LICENSE-ASSETS.md`, `.gitignore` from a brief | those four files | 0.46 for sessions 1–2 together |
 | 2 | 2026-11-25 | kiro-cli 3.6.0, V3, `--resume` | assistant | two wording fixes in README (Provenance, Trademarks) and TRADEMARKS.md (§7(e)) | edits to README.md, TRADEMARKS.md | (see 1) |
 | 3 | 2026-11-25 | kiro-cli 3.6.0, V3, `--no-interactive`, model `auto` | assistant | create four steering files (product, tech, structure, design-system with `fileMatch web/**`) from a brief based on the project plan | `.kiro/steering/*.md` | 0.75 |
+| 4 | 2026-11-25 | kiro-cli 3.6.0, V3, `--no-interactive --mode spec`, model `auto` | assistant | new Feature Spec `core-analysis` (Requirements-First): generate requirements from a scope brief based on the project plan | `.kiro/specs/core-analysis/requirements.md`, `.config.kiro` | 1.46 |
+| 5 | 2026-11-25 | kiro-cli 3.6.0, V3, spec mode, `--resume` | assistant | review fix: wrong ecosystems in Requirement 9.2 | edit to requirements.md | 1.20 |
 
 ## Files written outside Kiro
 
