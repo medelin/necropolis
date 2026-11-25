@@ -21,6 +21,7 @@ up to date with every commit. Nothing here is hidden or rounded up in Kiro's fav
 | 4 | 2026-11-25 | kiro-cli 3.6.0, V3, `--no-interactive --mode spec`, model `auto` | assistant | new Feature Spec `core-analysis` (Requirements-First): generate requirements from a scope brief based on the project plan | `.kiro/specs/core-analysis/requirements.md`, `.config.kiro` | 1.46 |
 | 5 | 2026-11-25 | kiro-cli 3.6.0, V3, spec mode, `--resume` | assistant | review fix: wrong ecosystems in Requirement 9.2 | edit to requirements.md | 1.20 |
 | 6 | 2026-11-25 | kiro-cli 3.6.0, V3, spec mode, `--resume` | assistant | design phase of `core-analysis` (first attempt failed with an expired CLI token, no output; re-login, retry) | `.kiro/specs/core-analysis/design.md` | 2.21 |
+| 7 | 2026-11-25 | kiro-cli 3.6.0, V3, spec mode, `--resume` | assistant | review fix in design (epitaph `{survivors}` = successor) and tasks phase of `core-analysis` (14 tasks; none executed) | design.md edit, `.kiro/specs/core-analysis/tasks.md` | 3.00 |
 
 ## Files written outside Kiro
 

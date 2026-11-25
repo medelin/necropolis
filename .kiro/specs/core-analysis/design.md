@@ -289,12 +289,12 @@ No pinned version → advisory lookup skipped → `contaminated: false`, `ringCo
 
 ### Epitaph templates (Req 6.9)
 
-One template per state, evaluated at scoring time. `{name}` is the package name, `{year}` is the year of the last-known release, `{survivors}` is a comma-joined list of dependent package names when available.
+One template per state, evaluated at scoring time. `{name}` is the package name, `{date}` is the full date of the last-known release (e.g. "2 June 2015"), `{year}` is the year of the last-known release, `{signal}` is the deprecation message or yanked reason from the registry, `{yankReason}` is the yanked reason. When an entry exists in `data/successors.json` for the package, all templates append `" Survived by {successor}."` where `{successor}` is the successor package name. Example: "Here drifts nose. Last transmission: 2 June 2015. Survived by pytest."
 
 | State | Explicit signal? | Template |
 |---|---|---|
 | `alive` | — | `"{name} sails on. Last transmission: {date}."` |
-| `adrift` | — | `"Here drifts {name}. Silent since {year}."` |
+| `adrift` | — | `"Here drifts {name}. Last transmission: {date}."` |
 | `wreck` | yes (deprecated) | `"Here lies {name}. Deprecated: {signal}."` |
 | `wreck` | yes (yanked) | `"Here lies {name}. Yanked from orbit: {yankReason}."` |
 | `wreck` | yes (Inactive) | `"Here lies {name}. Registry classified inactive."` |
