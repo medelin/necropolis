@@ -20,6 +20,7 @@ up to date with every commit. Nothing here is hidden or rounded up in Kiro's fav
 | 3 | 2026-11-25 | kiro-cli 3.6.0, V3, `--no-interactive`, model `auto` | assistant | create four steering files (product, tech, structure, design-system with `fileMatch web/**`) from a brief based on the project plan | `.kiro/steering/*.md` | 0.75 |
 | 4 | 2026-11-25 | kiro-cli 3.6.0, V3, `--no-interactive --mode spec`, model `auto` | assistant | new Feature Spec `core-analysis` (Requirements-First): generate requirements from a scope brief based on the project plan | `.kiro/specs/core-analysis/requirements.md`, `.config.kiro` | 1.46 |
 | 5 | 2026-11-25 | kiro-cli 3.6.0, V3, spec mode, `--resume` | assistant | review fix: wrong ecosystems in Requirement 9.2 | edit to requirements.md | 1.20 |
+| 6 | 2026-11-25 | kiro-cli 3.6.0, V3, spec mode, `--resume` | assistant | design phase of `core-analysis` (first attempt failed with an expired CLI token, no output; re-login, retry) | `.kiro/specs/core-analysis/design.md` | 2.21 |
 
 ## Files written outside Kiro
 
