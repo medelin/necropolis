@@ -18,17 +18,17 @@ Build the pure analysis engine in `packages/core` — a TypeScript ES-module pac
   - _Requirements: 6.7, 7.4_
 
 - [x] 2. Shared type definitions
-  - [ ] 2.1 Create `packages/core/src/parsers/types.ts` exporting `Ecosystem`, `Entry`, `ParseWarning`, and `ParseResult` exactly as specified in the design's "Parser types" section
+  - [x] 2.1 Create `packages/core/src/parsers/types.ts` exporting `Ecosystem`, `Entry`, `ParseWarning`, and `ParseResult` exactly as specified in the design's "Parser types" section
     - _Requirements: 1.1–1.4, 2.1–2.4_
 
-  - [ ] 2.2 Create `packages/core/src/sources/types.ts` exporting `FetchFn`, `Clock`, `Cache`, `CoreDeps`, and `RegistryData` exactly as specified in the design's "Injected interfaces" and "Registry data" sections
+  - [x] 2.2 Create `packages/core/src/sources/types.ts` exporting `FetchFn`, `Clock`, `Cache`, `CoreDeps`, and `RegistryData` exactly as specified in the design's "Injected interfaces" and "Registry data" sections
     - _Requirements: 7.4_
 
-  - [ ] 2.3 Create `packages/core/src/scoring/scorer.ts` (types portion only) exporting `State`, `EvidenceItem`, `Successor`, and `ScoredPackage`; and `packages/core/src/audit.ts` (types portion only) exporting `AuditSummary` and `AuditResult`
+  - [x] 2.3 Create `packages/core/src/scoring/scorer.ts` (types portion only) exporting `State`, `EvidenceItem`, `Successor`, and `ScoredPackage`; and `packages/core/src/audit.ts` (types portion only) exporting `AuditSummary` and `AuditResult`
     - _Requirements: 6.8, 8.1–8.2_
 
-- [ ] 3. `requirements.txt` parser
-  - [ ] 3.1 Implement `packages/core/src/parsers/requirements.ts` exporting `parseRequirements(text: string): ParseResult`
+- [x] 3. `requirements.txt` parser
+  - [x] 3.1 Implement `packages/core/src/parsers/requirements.ts` exporting `parseRequirements(text: string): ParseResult`
     - Handle `==` pin, non-`==` range specifiers, extras in `[]`, environment markers after `;`, backslash continuation lines
     - Skip blank lines and `#` comments silently
     - Skip and emit `ParseWarning` for lines beginning with `-r`, `-c`, `-e`, `--index-url`, direct URLs, and VCS references (Req 1.7)
@@ -36,21 +36,21 @@ Build the pure analysis engine in `packages/core` — a TypeScript ES-module pac
     - Never throw for any string input; unrecognised lines are skipped-with-warning
     - _Requirements: 1.1–1.9_
 
-  - [ ]* 3.2 Write property test `prop_parser_no_throw` for `parseRequirements`
+  - [x]* 3.2 Write property test `prop_parser_no_throw` for `parseRequirements`
     - **Property 1: Parser never throws**
     - Use `fc.string()` as the generator; assert that `parseRequirements(input)` always returns an object with `entries` and `warnings` arrays without throwing
     - Tag comment: `// Feature: core-analysis, Property 1: Parser never throws`
     - File: `packages/core/src/parsers/requirements.test.ts`
     - **Validates: Requirements 1.9**
 
-  - [ ]* 3.3 Write property test `prop_round_trip_requirements` for `parseRequirements`
+  - [x]* 3.3 Write property test `prop_round_trip_requirements` for `parseRequirements`
     - **Property 2: requirements.txt round-trip**
     - Generate arbitrary lists of valid `Entry` objects with `ecosystem = 'pypi'` using fast-check; serialise to `requirements.txt` text; parse; assert equivalence of name, pinnedVersion, range, extras, marker
     - Tag comment: `// Feature: core-analysis, Property 2: requirements.txt round-trip`
     - File: `packages/core/src/parsers/requirements.test.ts`
     - **Validates: Requirements 1.10**
 
-  - [ ]* 3.4 Write 20-case acceptance tests for `parseRequirements`
+  - [x]* 3.4 Write 20-case acceptance tests for `parseRequirements`
     - Cover: plain name, `==` pin, `>=` range, `~=` range, extras, environment marker, inline comment, blank line, continuation line, and each of the six skip-with-warning prefixes (`-r`, `-c`, `-e`, `--index-url`, direct URL, VCS ref)
     - File: `packages/core/src/parsers/requirements_parser.acceptance.test.ts`
     - _Requirements: 1.11_

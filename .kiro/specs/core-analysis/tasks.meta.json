@@ -1,5 +1,10 @@
 {
-  "pbtResults": {},
+  "pbtResults": {
+    "3.3 Write property test `prop_round_trip_requirements` for `parseRequirements`": {
+      "status": "passed",
+      "lastRunTimestamp": 1795767907318
+    }
+  },
   "executionHistory": {
     "1. Workspace scaffolding and configuration": [
       {
@@ -23,6 +28,102 @@
         "executionId": "4b3f1f2b-53c3-4ba1-bbd2-ee3a1a682d7b",
         "chatSessionId": "sess_fcbfb001-cd98-40cb-a74a-e6b22a0a6f90",
         "timestamp": 1795767444801
+      }
+    ],
+    "2.1 Create `packages/core/src/parsers/types.ts` exporting `Ecosystem`, `Entry`, `ParseWarning`, and `ParseResult` exactly as specified in the design's \"Parser types\" section": [
+      {
+        "executionId": "214a3cb5-0a08-4ae0-8870-9a037d114354",
+        "chatSessionId": "sess_29339eb7-6a97-48dd-a2c1-3beace87f7b5",
+        "timestamp": 1795767510750
+      },
+      {
+        "executionId": "214a3cb5-0a08-4ae0-8870-9a037d114354",
+        "chatSessionId": "sess_29339eb7-6a97-48dd-a2c1-3beace87f7b5",
+        "timestamp": 1795767512375
+      }
+    ],
+    "2.2 Create `packages/core/src/sources/types.ts` exporting `FetchFn`, `Clock`, `Cache`, `CoreDeps`, and `RegistryData` exactly as specified in the design's \"Injected interfaces\" and \"Registry data\" sections": [
+      {
+        "executionId": "214a3cb5-0a08-4ae0-8870-9a037d114354",
+        "chatSessionId": "sess_29339eb7-6a97-48dd-a2c1-3beace87f7b5",
+        "timestamp": 1795767514105
+      },
+      {
+        "executionId": "214a3cb5-0a08-4ae0-8870-9a037d114354",
+        "chatSessionId": "sess_29339eb7-6a97-48dd-a2c1-3beace87f7b5",
+        "timestamp": 1795767515823
+      }
+    ],
+    "2.3 Create `packages/core/src/scoring/scorer.ts` (types portion only) exporting `State`, `EvidenceItem`, `Successor`, and `ScoredPackage`; and `packages/core/src/audit.ts` (types portion only) exporting `AuditSummary` and `AuditResult`": [
+      {
+        "executionId": "214a3cb5-0a08-4ae0-8870-9a037d114354",
+        "chatSessionId": "sess_29339eb7-6a97-48dd-a2c1-3beace87f7b5",
+        "timestamp": 1795767517510
+      },
+      {
+        "executionId": "214a3cb5-0a08-4ae0-8870-9a037d114354",
+        "chatSessionId": "sess_29339eb7-6a97-48dd-a2c1-3beace87f7b5",
+        "timestamp": 1795767519159
+      }
+    ],
+    "3. `requirements.txt` parser": [
+      {
+        "executionId": "214a3cb5-0a08-4ae0-8870-9a037d114354",
+        "chatSessionId": "sess_29339eb7-6a97-48dd-a2c1-3beace87f7b5",
+        "timestamp": 1795767521412
+      },
+      {
+        "executionId": "214a3cb5-0a08-4ae0-8870-9a037d114354",
+        "chatSessionId": "sess_29339eb7-6a97-48dd-a2c1-3beace87f7b5",
+        "timestamp": 1795767915013
+      }
+    ],
+    "3.1 Implement `packages/core/src/parsers/requirements.ts` exporting `parseRequirements(text: string): ParseResult`": [
+      {
+        "executionId": "214a3cb5-0a08-4ae0-8870-9a037d114354",
+        "chatSessionId": "sess_29339eb7-6a97-48dd-a2c1-3beace87f7b5",
+        "timestamp": 1795767523001
+      },
+      {
+        "executionId": "214a3cb5-0a08-4ae0-8870-9a037d114354",
+        "chatSessionId": "sess_29339eb7-6a97-48dd-a2c1-3beace87f7b5",
+        "timestamp": 1795767914935
+      }
+    ],
+    "3.2 Write property test `prop_parser_no_throw` for `parseRequirements`": [
+      {
+        "executionId": "214a3cb5-0a08-4ae0-8870-9a037d114354",
+        "chatSessionId": "sess_29339eb7-6a97-48dd-a2c1-3beace87f7b5",
+        "timestamp": 1795767917667
+      },
+      {
+        "executionId": "214a3cb5-0a08-4ae0-8870-9a037d114354",
+        "chatSessionId": "sess_29339eb7-6a97-48dd-a2c1-3beace87f7b5",
+        "timestamp": 1795767920234
+      }
+    ],
+    "3.3 Write property test `prop_round_trip_requirements` for `parseRequirements`": [
+      {
+        "executionId": "214a3cb5-0a08-4ae0-8870-9a037d114354",
+        "chatSessionId": "sess_29339eb7-6a97-48dd-a2c1-3beace87f7b5",
+        "timestamp": 1795767922113
+      },
+      {
+        "executionId": "214a3cb5-0a08-4ae0-8870-9a037d114354",
+        "chatSessionId": "sess_29339eb7-6a97-48dd-a2c1-3beace87f7b5",
+        "timestamp": 1795767923812
+      }
+    ],
+    "3.4 Write 20-case acceptance tests for `parseRequirements`": [
+      {
+        "executionId": "214a3cb5-0a08-4ae0-8870-9a037d114354",
+        "chatSessionId": "sess_29339eb7-6a97-48dd-a2c1-3beace87f7b5",
+        "timestamp": 1795767925447
+      },
+      {
+        "executionId": "214a3cb5-0a08-4ae0-8870-9a037d114354",
+        "chatSessionId": "sess_29339eb7-6a97-48dd-a2c1-3beace87f7b5",
+        "timestamp": 1795767927139
       }
     ]
   }
