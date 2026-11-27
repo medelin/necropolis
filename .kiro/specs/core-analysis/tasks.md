@@ -6,7 +6,7 @@ Build the pure analysis engine in `packages/core` — a TypeScript ES-module pac
 
 ## Tasks
 
-- [ ] 1. Workspace scaffolding and configuration
+- [x] 1. Workspace scaffolding and configuration
   - Create `packages/core/package.json` as an npm workspace member with name `@necropolis/core`, type `"module"`, and no Node-only or DOM-only dependencies
   - Add `packages/core` to the root `package.json` workspaces array
   - Create `packages/core/tsconfig.json` with `strict: true`, `module: NodeNext`, `moduleResolution: NodeNext`, and `target: ES2022`
