@@ -180,6 +180,37 @@
         "chatSessionId": "sess_da93f4f6-0cf0-4476-925c-68a3ecf1e8ea",
         "timestamp": 1795768411874
       }
+    ],
+    "5.1 Implement `packages/core/src/sources/concurrency.ts` exporting `makeLimitedFetch(fetch: FetchFn, limit?: number): FetchFn`": [
+      {
+        "executionId": "10e3de5e-b0ca-4070-ad97-aa682dc29cdf",
+        "chatSessionId": "sess_f41f63f8-3573-471b-a104-9337f44e02fd",
+        "timestamp": 1795768471828
+      },
+      {
+        "executionId": "10e3de5e-b0ca-4070-ad97-aa682dc29cdf",
+        "chatSessionId": "sess_f41f63f8-3573-471b-a104-9337f44e02fd",
+        "timestamp": 1795768485476
+      }
+    ],
+    "5. Concurrency limiter": [
+      {
+        "executionId": "10e3de5e-b0ca-4070-ad97-aa682dc29cdf",
+        "chatSessionId": "sess_f41f63f8-3573-471b-a104-9337f44e02fd",
+        "timestamp": 1795768485495
+      }
+    ],
+    "5.2 Write unit test for `makeLimitedFetch`": [
+      {
+        "executionId": "10e3de5e-b0ca-4070-ad97-aa682dc29cdf",
+        "chatSessionId": "sess_f41f63f8-3573-471b-a104-9337f44e02fd",
+        "timestamp": 1795768487689
+      },
+      {
+        "executionId": "10e3de5e-b0ca-4070-ad97-aa682dc29cdf",
+        "chatSessionId": "sess_f41f63f8-3573-471b-a104-9337f44e02fd",
+        "timestamp": 1795768522379
+      }
     ]
   }
 }

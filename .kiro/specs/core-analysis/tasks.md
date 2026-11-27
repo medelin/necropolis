@@ -83,13 +83,13 @@ Build the pure analysis engine in `packages/core` — a TypeScript ES-module pac
     - File: `packages/core/src/parsers/package_json_parser.acceptance.test.ts`
     - _Requirements: 2.9_
 
-- [ ] 5. Concurrency limiter
-  - [ ] 5.1 Implement `packages/core/src/sources/concurrency.ts` exporting `makeLimitedFetch(fetch: FetchFn, limit?: number): FetchFn`
+- [x] 5. Concurrency limiter
+  - [x] 5.1 Implement `packages/core/src/sources/concurrency.ts` exporting `makeLimitedFetch(fetch: FetchFn, limit?: number): FetchFn`
     - Default limit is 6; queues requests beyond the limit and drains the queue in FIFO order as slots free
     - Implementation matches the design's queue-based pattern exactly
     - _Requirements: 7.2_
 
-  - [ ]* 5.2 Write unit test for `makeLimitedFetch`
+  - [x]* 5.2 Write unit test for `makeLimitedFetch`
     - Assert that at no point during a burst of 20 simultaneous requests are more than 6 fetches in-flight concurrently (use mock timer + in-flight counter)
     - File: `packages/core/src/sources/concurrency.test.ts`
     - _Requirements: 7.2_
