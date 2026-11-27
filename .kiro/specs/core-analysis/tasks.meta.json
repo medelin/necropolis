@@ -211,6 +211,18 @@
         "chatSessionId": "sess_f41f63f8-3573-471b-a104-9337f44e02fd",
         "timestamp": 1795768522379
       }
+    ],
+    "6. Fixture-mode adapter": [
+      {
+        "executionId": "6a70b1a3-e8e3-40ad-8f90-3b91f280b775",
+        "chatSessionId": "sess_cfb96598-0311-4b89-b6ab-104402f5de19",
+        "timestamp": 1795768585343
+      },
+      {
+        "executionId": "6a70b1a3-e8e3-40ad-8f90-3b91f280b775",
+        "chatSessionId": "sess_cfb96598-0311-4b89-b6ab-104402f5de19",
+        "timestamp": 1795769044307
+      }
     ]
   }
 }

@@ -94,7 +94,7 @@ Build the pure analysis engine in `packages/core` — a TypeScript ES-module pac
     - File: `packages/core/src/sources/concurrency.test.ts`
     - _Requirements: 7.2_
 
-- [ ] 6. Fixture-mode adapter
+- [x] 6. Fixture-mode adapter
   - [ ] 6.1 Implement `packages/core/src/sources/fixture-fetch.ts` exporting `makeFixtureFetch(): FetchFn`
     - Map URLs to fixture paths per the design's `urlToFixturePath` rules: PyPI single → `fixtures/pypi/<name>.json`; PyPI versioned → `fixtures/pypi/<name>-<ver>.json`; npm latest → `fixtures/npm/<name>-latest.json`; npm full → `fixtures/npm/<name>-full.json`; OSV batch → `fixtures/osv/<sha256>.json`; OSV detail → `fixtures/osv/<id>.json`
     - Throw an error named `FixtureNotFoundError` that includes the requested URL for any URL with no corresponding fixture file (Req 9.4)
