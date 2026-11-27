@@ -55,8 +55,8 @@ Build the pure analysis engine in `packages/core` — a TypeScript ES-module pac
     - File: `packages/core/src/parsers/requirements_parser.acceptance.test.ts`
     - _Requirements: 1.11_
 
-- [ ] 4. `package.json` parser
-  - [ ] 4.1 Implement `packages/core/src/parsers/package-json.ts` exporting `parsePackageJson(text: string): ParseResult`
+- [x] 4. `package.json` parser
+  - [x] 4.1 Implement `packages/core/src/parsers/package-json.ts` exporting `parsePackageJson(text: string): ParseResult`
     - Produce `Entry` with `dev: false` for `dependencies`, `dev: true` for `devDependencies`
     - Mark entry as pinned when version is exact semver (no range operators)
     - Store full specifier as `range` for semver range operators (`^`, `~`, `>=`, `<=`, `>`, `<`, `||`, `-`)
@@ -64,21 +64,21 @@ Build the pure analysis engine in `packages/core` — a TypeScript ES-module pac
     - Return zero entries and one `ParseWarning` when input is not valid JSON; never throw
     - _Requirements: 2.1–2.7_
 
-  - [ ]* 4.2 Write property test `prop_parser_no_throw` for `parsePackageJson`
+  - [x]* 4.2 Write property test `prop_parser_no_throw` for `parsePackageJson`
     - **Property 1: Parser never throws**
     - Use `fc.string()` and arbitrary JSON-like strings as generators; assert that `parsePackageJson(input)` always returns `{ entries, warnings }` without throwing
     - Tag comment: `// Feature: core-analysis, Property 1: Parser never throws`
     - File: `packages/core/src/parsers/package-json.test.ts`
     - **Validates: Requirements 2.7**
 
-  - [ ]* 4.3 Write property test `prop_round_trip_package_json` for `parsePackageJson`
+  - [x]* 4.3 Write property test `prop_round_trip_package_json` for `parsePackageJson`
     - **Property 3: package.json round-trip**
     - Generate arbitrary lists of valid `Entry` objects with `ecosystem = 'npm'`; serialise to `package.json` text; parse; assert equivalence of name, pinnedVersion, range, dev
     - Tag comment: `// Feature: core-analysis, Property 3: package.json round-trip`
     - File: `packages/core/src/parsers/package-json.test.ts`
     - **Validates: Requirements 2.8**
 
-  - [ ]* 4.4 Write 20-case acceptance tests for `parsePackageJson`
+  - [x]* 4.4 Write 20-case acceptance tests for `parsePackageJson`
     - Cover: plain `dependencies`, plain `devDependencies`, exact semver pin, caret range, tilde range, combined range, and each of the six skip-with-warning specifier prefixes
     - File: `packages/core/src/parsers/package_json_parser.acceptance.test.ts`
     - _Requirements: 2.9_
