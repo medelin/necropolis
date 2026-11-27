@@ -17,7 +17,7 @@ Build the pure analysis engine in `packages/core` — a TypeScript ES-module pac
   - All new `.ts` source files carry the SPDX header `// SPDX-License-Identifier: AGPL-3.0-only`
   - _Requirements: 6.7, 7.4_
 
-- [ ] 2. Shared type definitions
+- [x] 2. Shared type definitions
   - [ ] 2.1 Create `packages/core/src/parsers/types.ts` exporting `Ecosystem`, `Entry`, `ParseWarning`, and `ParseResult` exactly as specified in the design's "Parser types" section
     - _Requirements: 1.1–1.4, 2.1–2.4_
 

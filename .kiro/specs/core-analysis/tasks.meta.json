@@ -12,6 +12,18 @@
         "chatSessionId": "sess_a7700fe5-c897-43de-8e30-437121dbe5bf",
         "timestamp": 1795767126273
       }
+    ],
+    "2. Shared type definitions": [
+      {
+        "executionId": "4b3f1f2b-53c3-4ba1-bbd2-ee3a1a682d7b",
+        "chatSessionId": "sess_fcbfb001-cd98-40cb-a74a-e6b22a0a6f90",
+        "timestamp": 1795767361376
+      },
+      {
+        "executionId": "4b3f1f2b-53c3-4ba1-bbd2-ee3a1a682d7b",
+        "chatSessionId": "sess_fcbfb001-cd98-40cb-a74a-e6b22a0a6f90",
+        "timestamp": 1795767444801
+      }
     ]
   }
 }
